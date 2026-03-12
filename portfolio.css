@@ -104,7 +104,7 @@ opacity:1;
 }
 }
 
-text h3{
+.text h3{
 font-size:22px;
 color:black;
 }
@@ -167,7 +167,7 @@ opacity:1;
 }
 }
 
-images img{
+.images img{
 width:300px;
 height:300px;
 object-fit:cover;
