@@ -77,8 +77,8 @@ body {
     flex-direction: column; /* stack on mobile */
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    padding: 50px 20px;
+    gap: 50px;
+    padding: 80px 20px;
 }
 
 /* Text area */
