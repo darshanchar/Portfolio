@@ -45,23 +45,22 @@ body{
 }
 
 /* Menu */
-.menu{
-    display:flex;        /* horizontal row */
-    gap:40px;            /* spacing between items */
-    list-style:none;
-    text-transform:uppercase;
-    align-items:center;  /* vertically center */
-    margin:0;
-    padding:0;
-    flex-wrap:nowrap;    /* prevent wrapping to next line */
+.elements{
+display:flex;
+gap:40px;
+list-style:none;
 }
 
-.menu li a{
-    text-decoration:none;
-    color:white;
-    font-size:16px;
-    font-weight:500;
-    transition:0.4s;
+.elements li{
+cursor:pointer;
+font-weight:500;
+transition:0.4s;
+}
+
+.elements li:hover{
+color:#00ffff;
+transform:translateY(-4px) scale(1.1);
+text-shadow:0 0 10px cyan;
 }
 
 .menu li a:hover{
