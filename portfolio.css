@@ -25,6 +25,7 @@ body{
 /* -------------------------------
    NAVBAR
 ---------------------------------*/
+/* NAVBAR */
 .container{
     display:flex;
     justify-content:space-between;
@@ -32,8 +33,10 @@ body{
     padding:20px 60px;
     background:rgba(0,0,0,0.7);
     border-bottom:1px solid #00ffff;
+    flex-wrap:nowrap; /* prevent wrapping */
 }
 
+/* Logo */
 .logo h2{
     color:white;
     font-size:22px;
@@ -41,24 +44,16 @@ body{
     animation:glow 2s infinite alternate;
 }
 
-@keyframes glow{
-    from{
-        text-shadow:0 0 5px #ff4b2b,
-                    0 0 10px #ff4b2b,
-                    0 0 15px #ff4b2b;
-    }
-    to{
-        text-shadow:0 0 5px #00ffff,
-                    0 0 10px #00ffff,
-                    0 0 20px #00ffff;
-    }
-}
-
+/* Menu */
 .menu{
-    display:flex;
-    gap:40px;
+    display:flex;        /* horizontal row */
+    gap:40px;            /* spacing between items */
     list-style:none;
     text-transform:uppercase;
+    align-items:center;  /* vertically center */
+    margin:0;
+    padding:0;
+    flex-wrap:nowrap;    /* prevent wrapping to next line */
 }
 
 .menu li a{
