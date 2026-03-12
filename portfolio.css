@@ -1,0 +1,181 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1a2a6c);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+color:white;
+}
+
+/* BACKGROUND ANIMATION */
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+
+/* MAIN WRAPPER */
+
+.wrapper{
+width:100%;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+
+/* NAVBAR */
+
+.container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:20px 80px;
+}
+
+.logo i{
+font-size:30px;
+color:#ffcc70;
+}
+
+.logo1 i{
+font-size:28px;
+color:#00ffff;
+}
+
+
+/* MENU */
+
+.elements{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+.elements li{
+cursor:pointer;
+font-weight:500;
+transition:0.4s;
+}
+
+.elements li:hover{
+color:#00ffff;
+transform:translateY(-4px) scale(1.1);
+text-shadow:0 0 10px cyan;
+}
+
+
+/* HERO SECTION */
+
+.main{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:100px;
+padding:80px;
+}
+
+
+/* TEXT AREA */
+
+.text{
+max-width:520px;
+animation:slideLeft 1.5s ease;
+}
+
+@keyframes slideLeft{
+from{
+transform:translateX(-100px);
+opacity:0;
+}
+to{
+transform:translateX(0);
+opacity:1;
+}
+}
+
+.text h3{
+font-size:22px;
+color:#ccc;
+}
+
+.text h1{
+font-size:48px;
+margin:10px 0;
+}
+
+.text h1 span{
+color:#ff4b2b;
+text-shadow:0 0 15px #ff4b2b;
+}
+
+.text h2{
+font-size:24px;
+color:#00ffff;
+margin-bottom:15px;
+}
+
+.text p{
+color:#ddd;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+
+/* SOCIAL ICONS */
+
+.social a{
+margin-right:15px;
+font-size:24px;
+display:inline-block;
+transition:0.4s;
+}
+
+.fa-facebook{color:#1877f2;}
+.fa-instagram{color:#e1306c;}
+.fa-linkedin{color:#0a66c2;}
+
+.social a:hover{
+transform:rotateY(360deg) scale(1.3);
+}
+
+
+/* IMAGE */
+
+.imag{
+animation:slideRight 1.5s ease;
+}
+
+@keyframes slideRight{
+from{
+transform:translateX(100px);
+opacity:0;
+}
+to{
+transform:translateX(0);
+opacity:1;
+}
+}
+
+.imag img{
+width:300px;
+height:300px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid #00ffff;
+box-shadow:0 0 40px rgba(0,255,255,0.6);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0px);}
+}
