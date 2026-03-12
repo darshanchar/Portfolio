@@ -76,7 +76,7 @@ body {
 ---------------------------------*/
 .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 100px;
     padding: 80px;
@@ -92,6 +92,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     animation: slideLeft 1.5s ease;
+    margin-left: 100px; /* push text to the right */
 }
 
 @keyframes slideLeft {
